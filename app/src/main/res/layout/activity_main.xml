@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/background_color">
+
+    <!-- Judul -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kalkulator Sederhana"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:paddingBottom="15dp"/>
+
+    <!-- Container untuk input angka -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <!-- Input angka pertama -->
+        <EditText
+            android:id="@+id/num1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:gravity="center"
+            android:background="@drawable/input_style"
+            android:textColor="@color/white"
+            android:padding="10dp"/>
+
+        <!-- Tanda plus -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:padding="10dp"/>
+
+        <!-- Input angka kedua -->
+        <EditText
+            android:id="@+id/num2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:gravity="center"
+            android:background="@drawable/input_style"
+            android:textColor="@color/white"
+            android:padding="10dp"/>
+
+        <!-- Tanda sama dengan -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="="
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:padding="10dp"/>
+
+        <!-- Hasil -->
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:background="@drawable/input_style"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+    <!-- Tombol Hitung -->
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hitung"
+        android:background="@drawable/button_style"
+        android:textColor="@color/white"
+        android:padding="15dp"
+        android:textSize="16sp"/>
+</LinearLayout>
